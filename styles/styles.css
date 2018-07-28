@@ -469,6 +469,15 @@ nav ul li .glass {
     margin-left: 0;
 }
 
+.leaveComment .commentInput textarea {
+    font-family: 'Lora', serif;
+    margin: 20px 10px 20px 0;
+    height: 200px;
+    width: 94.2%;
+    padding: 90px 0;
+    border: 1px solid #CCCCCC;
+}    
+
 /* *** CONTACT PAGE STYLES *** */
 
 /* CONTACT PAGE HEADING IMAGE */
@@ -574,6 +583,7 @@ nav ul li .glass {
     font-weight: 700;
     padding: 10px 0;
 }
+
 
 /* CONTACT PAGE BOTTOM HERO IMAGE */
 .heroImage {
