@@ -355,7 +355,7 @@ nav ul li .glass {
 .contact .name input[type=text],
 .contact .email input[type=email],
 .contact .subject input[type=text],
-.contact .message input[type=text] {
+.contact .message textarea {
     background-color:#f6f6f6;
     border: none;
     font-family: 'Lora', serif;
@@ -378,9 +378,9 @@ nav ul li .glass {
     padding: 12px;
 }
 
-.contact .message input[type=text] {
-    /* margin: 10px 10px 10px 0; */
+.contact .message textarea {
     margin: 20px 10px 20px 0;
+    height: 200px;
     width: 96.7%;
     padding: 90px 0;
 }
@@ -392,10 +392,6 @@ nav ul li .glass {
     text-transform: uppercase;
     font-weight: 700;
     padding: 10px 0;
-}
-
-.contact .submitButton [type=submit]::placeholder {
-    color: red;
 }
 
 /* CONTACT PAGE BOTTOM HERO IMAGE */
