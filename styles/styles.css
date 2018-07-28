@@ -303,8 +303,9 @@ nav ul li .glass {
 /* CONTACT PAGE CONTACT SECTION */
 
 .contact {
-    width: 60%;
+    width: calc(60% - 150px);
     float: left;
+    margin-left: 150px;
 }
 
 /* CONTACT PAGE CONTACT DETAILS SECTION */
@@ -314,6 +315,8 @@ nav ul li .glass {
     background-color: #f6f6f6;
     float: left;
 }
+
+/* CONTACT TEXT STYLES */
 
 .contactDetails h2 {
     text-align: left;
@@ -341,6 +344,58 @@ nav ul li .glass {
 
 .contactDetails p:nth-of-type(7) {
     margin-bottom: 60px;
+}
+
+/* CONTACT PAGE CONTACT FORM SECTION */
+.contact h2 {
+    text-align: left;
+    margin-top: 78px
+}
+
+.contact .name input[type=text],
+.contact .email input[type=email],
+.contact .subject input[type=text],
+.contact .message input[type=text] {
+    background-color:#f6f6f6;
+    border: none;
+    font-family: 'Lora', serif;
+}
+
+.contact .name input[type=text],
+.contact .email input[type=email] {
+    width: calc(50% - 20px);
+    float: left;
+    margin: 20px 10px;
+    padding: 12px;
+}
+
+.contact .name input[type=text] {
+    margin-left: 0;
+}
+
+.contact .subject input[type=text] {
+    width: 96.7%;
+    padding: 12px;
+}
+
+.contact .message input[type=text] {
+    /* margin: 10px 10px 10px 0; */
+    margin: 20px 10px 20px 0;
+    width: 96.7%;
+    padding: 90px 0;
+}
+
+.contact .submitButton input[type=submit] {
+    background: none;
+    color: #64a604;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.contact .submitButton [type=submit]::placeholder {
+    color: red;
 }
 
 /* CONTACT PAGE BOTTOM HERO IMAGE */
