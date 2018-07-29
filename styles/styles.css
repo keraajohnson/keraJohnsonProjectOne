@@ -87,6 +87,23 @@ p {
 nav ul li .bag,
 nav ul li .glass {
     font-size: 1.1rem;
+    position: relative;
+}
+
+nav ul li .bag::after {
+    content: "2";
+    font-family: 'Raleway', sans-serif;
+    width: 15px;
+    height: 15px;
+    /* padding: 1px; */
+    font-size: 0.8rem;
+    border-radius: 50%;
+    background-color: #64a604;
+    color: #ffffff;
+    position: absolute;
+    z-index: 2;
+    top: 8px;
+    left: 10px;
 }
 
  nav ul li a:hover {
@@ -134,7 +151,7 @@ nav ul li .glass {
 
 .popularRec .recipes {
     text-align: center;
-    min-height: 515.7px;
+    min-height: 522.7px;
 }
 
 .popularRec h2 {
@@ -169,7 +186,7 @@ nav ul li .glass {
 
 .popularRec .rowTwo .listBox {
     background-color: #f2f2f2;
-    padding: 70px 30px;
+    padding: 71px 30px;
 }
 
 .popularRec .rowTwo .listBox ul li {
@@ -191,7 +208,7 @@ nav ul li .glass {
     padding-top: 0;
     color: #999999;
 }
-/*  HOME PAGE OUR RESTURANTS */
+/*  HOME PAGE OUR RESTAURANTS */
 
 .imageBox {
     width: 50%;
@@ -451,6 +468,11 @@ nav ul li .glass {
 
 /* BLOG PAGE CONTACT FORM */
 
+.leaveComment {
+    margin-bottom: 180px;
+    }
+}
+
 .leaveComment p {
     color: #999999;
 }
@@ -476,7 +498,18 @@ nav ul li .glass {
     width: 94.2%;
     padding: 90px 0;
     border: 1px solid #CCCCCC;
-}    
+}   
+
+.leaveComment .submitInput [type=submit] {
+    border: none;
+    background-color:#64a604;
+    padding: 15px 17px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 12px;
+}
 
 /* *** CONTACT PAGE STYLES *** */
 
@@ -577,6 +610,7 @@ nav ul li .glass {
 .contact .submitButton input[type=submit] {
     background: none;
     color: #64a604;
+    border: none;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: 700;
@@ -666,13 +700,17 @@ footer button .arrow {
 /* FOOTER SOCIAL ICONS */
 
 footer .socialIcons .icon {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: white;
     margin: 20px 10px;
 }
 
 footer .socialIcons .facebook {
     margin-left: 0;
+}
+
+footer .socialIcons .icon:hover {
+    color: #64a604;
 }
 
 /* FOOTER BOTTOM FOOTER STYLES */
