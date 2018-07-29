@@ -489,7 +489,6 @@ nav ul li .glass {
     background-position: center;
 }
 
-
 /* CONTACT PAGE CONTACT SECTION */
 
 .contact {
@@ -601,13 +600,23 @@ footer {
     background-color:#2e2e2e;
 }
 
-footer .wrapper {
-    padding: 30px 0;
+.footerTop  .wrapper {
+    padding: 40px 0;
 }
 
 footer .footerBox {
     width: 33%;
     float: left;
+}
+
+
+footer .borderTop {
+    border-top: 1px solid #525252;
+    width: 65%;
+}
+
+footer form {
+    margin-bottom: 15px;
 }
 
 /* FOOTER TEXT STYLES */
@@ -640,11 +649,18 @@ footer input[type=text] {
     font-style: italic;
 }
 
-input[type=submit] {
+footer button {
     background-color: #64a604;
     border: none;
-    padding: 11px 15px;
+    padding: 7px 18px 9.5px 0;
     margin: 0;
+    position: relative;
+}
+
+footer button .arrow {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-left: 15px;
 }
 
 /* FOOTER SOCIAL ICONS */
@@ -652,13 +668,34 @@ input[type=submit] {
 footer .socialIcons .icon {
     font-size: 1.1rem;
     color: white;
-    margin: 17px 10px;
+    margin: 20px 10px;
 }
 
 footer .socialIcons .facebook {
     margin-left: 0;
 }
 
+/* FOOTER BOTTOM FOOTER STYLES */
+footer .wrapper {
+    padding: 1px;
+}
+
+.footerBottom {
+    background-color: #252525;
+    padding: 0px;
+}
+
+.footerBottom p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.footerBottom .footerGreenText {
+    color: #64a604;
+}
+
+.footerBottom .sneakyOrangePeriod {
+    color: #cc9900;
+}
 
 
 
