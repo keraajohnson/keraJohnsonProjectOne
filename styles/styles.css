@@ -338,7 +338,9 @@ nav ul li .bag::after {
 }
 
 .blogTags,
-.blogWriter {
+.blogWriter,
+.relatedPosts .wrapper,
+.commentsSection .wrapper {
     border-top: 1px solid rgba(204, 204, 204, 0.5);
 }
 
@@ -346,14 +348,36 @@ nav ul li .bag::after {
     width: 20%;
 }
 
+.blogTags p {
+    float: left;
+}
+
+.blogTags ul {
+    margin: 13px 5px 0 0;
+}
 .blogTags ul li {
     float: left;
 }
 
 .blogTags ul li a{
-    color: #666666;
+    color: #999999;
     text-decoration: none;
-    padding: 2px;
+    padding: 3px 2px 0 2px;
+}
+
+.blogSocialIcons p {
+    float: left;
+}
+
+.blogSocialIcons .blogIcons {
+    float: left;
+    margin: 11.5px
+}
+
+.blogSocialIcons .icon {
+    font-size: 0.9rem;
+    color: #999999;
+    margin: 0 5px;
 }
 
 /* BLOG PAGE BLOG WRITER SECTION */
