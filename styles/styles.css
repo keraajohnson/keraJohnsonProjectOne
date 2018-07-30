@@ -93,6 +93,7 @@ nav ul li .glass {
 nav ul li .bag::after {
     content: "2";
     font-family: 'Raleway', sans-serif;
+    text-align: center;
     width: 15px;
     height: 15px;
     /* padding: 1px; */
@@ -157,6 +158,17 @@ nav ul li .bag::after {
 .popularRec h2 {
     padding-top: 110px;
     padding-bottom: 0;
+    position: relative;
+}
+
+.popularRec h2::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: green;
+    position: absolute;
+    top: 150px;
+    right: 330px;
 }
 
 .popularRec .recipes p {
@@ -226,6 +238,17 @@ nav ul li .bag::after {
 
 .ourRestos h2 {
     margin-top: 60px;
+    position: relative;
+}
+
+.ourRestos h2::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: green;
+    position: absolute;
+    top: 35px;
+    right: 230px;
 }
 
 .ourRestos p {
@@ -255,6 +278,17 @@ nav ul li .bag::after {
 
 .testimonials h2 {
     margin-bottom: 50px;
+    position: relative;
+}
+
+.testimonials h2::after {
+    content: "";
+    width: 70px;
+    height: 3px;
+    background-color: green;
+    position: absolute;
+    top: 40px;
+    right: 500px;
 }
 
 .testimonials p { 
@@ -494,7 +528,6 @@ nav ul li .bag::after {
 
 .leaveComment {
     margin-bottom: 180px;
-    }
 }
 
 .leaveComment p {
@@ -515,13 +548,14 @@ nav ul li .bag::after {
     margin-left: 0;
 }
 
-.leaveComment .commentInput textarea {
+.commentInput textarea {
     font-family: 'Lora', serif;
     margin: 20px 10px 20px 0;
     height: 200px;
     width: 94.2%;
-    padding: 90px 0;
+    padding: 10px 8px;
     border: 1px solid #CCCCCC;
+    resize:  none;
 }   
 
 .leaveComment .submitInput [type=submit] {
@@ -605,6 +639,7 @@ nav ul li .bag::after {
     background-color:#f6f6f6;
     border: none;
     font-family: 'Lora', serif;
+    resize: none;
 }
 
 .contact .name input[type=text],
@@ -629,6 +664,7 @@ nav ul li .bag::after {
     height: 200px;
     width: 96.7%;
     padding: 90px 0;
+    resize: none;
 }
 
 .contact .submitButton input[type=submit] {
@@ -667,7 +703,6 @@ footer .footerBox {
     float: left;
 }
 
-
 footer .borderTop {
     border-top: 1px solid #525252;
     width: 65%;
@@ -696,7 +731,7 @@ footer p {
 
 /* FOOTER INPUT STYLES */
 
-footer input[type=text] {
+footer input[type=email] {
     padding: 11px 11px;
     margin: 0;
     background-color:#525252;
