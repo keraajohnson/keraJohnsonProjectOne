@@ -48,10 +48,10 @@
                             <a href="contact.html">Contact</a>
                         </li>
                         <li>
-                            <i class="fas fa-shopping-bag bag"></i>
+                            <i class="fas fa-shopping-bag bag" aria-hidden="true"></i>
                         </li>
                         <li>
-                            <i class="fas fa-search glass"></i>
+                            <i class="fas fa-search glass" aria-hidden="true"></i>
                         </li>
                     </ul>
                 </nav>
@@ -96,9 +96,9 @@
                 <div class="blogSocialIcons clearfix">
                     <p><strong>SHARE:</strong></p>
                     <div class="blogIcons">
-                        <a href="https://www.facebook.com/"><i title="Link to Facebook" class="fab fa-facebook-f facebook icon"></i></a>
-                        <a href="https://twitter.com/?lang=en"><i title="Link to Twitter" class="fab fa-twitter twitter icon"></i></a>
-                        <a href="https://www.instagram.com/?hl=en"><i title="Link to Instagram" class="fab fa-instagram instagram icon"></i></a>
+                        <a href="https://www.facebook.com/"><i title="Link to Facebook" aria-hidden="true" class="fab fa-facebook-f facebook icon"></i></a>
+                        <a href="https://twitter.com/?lang=en"><i title="Link to Twitter" aria-hidden="true" class="fab fa-twitter twitter icon"></i></a>
+                        <a href="https://www.instagram.com/?hl=en"><i title="Link to Instagram" aria-hidden="true" class="fab fa-instagram instagram icon"></i></a>
                     </div>
                 </div>
                 <div class="blogWriter">
@@ -173,22 +173,23 @@
                 <form action="">
                     <div class="nameInput">
                         <label for="name"></label>
-                        <input type="text" id="name" placeholder="Name *" required="true">
+                        <input type="text" id="name" placeholder="Name *" class="name" required="true">
                     </div>
                     <div class="emailInput">
                         <label for="email"></label>
-                        <input type="email" id="email" placeholder="Email *" required="true">
+                        <input type="email" id="email" placeholder="Email *" class="email" required="true">
                     </div>
                     <div class="websiteInput">
                         <label for="website"></label>
-                        <input type="text" id="website" placeholder="Your Website">
+                        <input type="text" id="website" class="website" placeholder="Your Website">
                     </div>
                     <div class="commentInput">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Message *" required="true" ></textarea>
+                        <label for="textarea"></label>
+                        <textarea name="comment" id="comment" class="comment" placeholder="Message *" required="true" ></textarea>
                     </div>
                     <div class="submitInput">
                         <label for="submitComment"></label>
-                        <input type="submit" id="submitComment" placeholder="Submit Comment" value="Submit Comment">
+                        <input type="submit" id="submitComment" name="submitClass" class="submitComment" placeholder="Submit Comment" value="Submit Comment">
                     </div>
                 </form>
             </div>
@@ -232,13 +233,13 @@
                     </form>
                     <div class="socialIcons borderTop">
                         <a href="https://www.facebook.com/">
-                            <i title="Link to Facebook" class="fab fa-facebook-f icon facebook"></i>
+                            <i title="Link to Facebook" class="fab fa-facebook-f icon facebook" aria-hidden="true"></i>
                         </a>
                         <a href="https://twitter.com/?lang=en">
-                            <i title="Link to Twitter" class="fab fa-twitter icon twitter"></i>
+                            <i title="Link to Twitter" class="fab fa-twitter icon twitter" aria-hidden="true"></i>
                         </a>
                         <a href="https://www.instagram.com/?hl=en">
-                            <i title="Link to Instagram" class="fab fa-instagram icon insta"></i>
+                            <i title="Link to Instagram" class="fab fa-instagram icon insta" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -249,8 +250,8 @@
         <section class="footerBottom">
             <div class="wrapper">
                 <p>Copyrights © 2015 by
-                    <span class="footerGreenText">POLAR</span>
-                    <span class="sneakyOrangePeriod">.</span> All Rights Reserved.</p>
+                <span class="footerGreenText">POLAR</span>
+                <span class="sneakyOrangePeriod">.</span> All Rights Reserved.</p>
             </div>
         </section>
     </footer>

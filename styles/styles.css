@@ -137,7 +137,7 @@ nav ul li .bag::after {
     background-size: cover;
 }
 
-/* HOME PAGE OUR RECIPES */
+/* HOME PAGE POPULAR RECIPES SECTION */
 .popularRec {
     width: 100%;
 }
@@ -220,7 +220,7 @@ nav ul li .bag::after {
     padding-top: 0;
     color: #999999;
 }
-/*  HOME PAGE OUR RESTAURANTS */
+/*  HOME PAGE OUR RESTAURANTS SECTION */
 
 .imageBox {
     width: 50%;
@@ -324,19 +324,20 @@ nav ul li .bag::after {
     margin-top: 75px;
 }
 
-.testimonials .arrows svg {
+.testimonials .arrows .left,
+.testimonials .arrows .right {
     color: #ffffff;
     font-size: 1.7rem;
     text-align: center;
 }
 
-.testimonials .arrows svg:hover {
+.testimonials .arrows .left:hover,
+.testimonials .arrows .right:hover {
     color: #999999;
 }
 
 .left {
     margin-right: 30px;
-    /* color: red; */
 }
 
 /* *** BLOG PAGE STYLES *** */
@@ -663,7 +664,7 @@ nav ul li .bag::after {
     margin: 20px 10px 20px 0;
     height: 200px;
     width: 96.7%;
-    padding: 90px 0;
+    padding: 10px 10px;
     resize: none;
 }
 
